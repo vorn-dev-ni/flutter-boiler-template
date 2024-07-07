@@ -3,9 +3,8 @@
 import 'dart:convert';
 import 'dart:io';
 import 'package:http/http.dart' as http;
-import 'package:offline_task/service/base_api_service.dart';
+import 'package:offline_task/services/base_api_service.dart';
 
-import 'package:offline_task/service/network/error_response.dart';
 
 class NetworkClient implements BaseApiService {
   // Future<dynamic> fetchData (String baseUrl) async {
