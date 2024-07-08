@@ -1,4 +1,4 @@
-# offline_task
+# Flutter Boilertemplate + Bloc
 
 A new Flutter project.
 
