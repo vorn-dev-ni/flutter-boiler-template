@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:offline_task/global.dart';
 import 'package:offline_task/routes/app-routes.dart';
-import 'package:offline_task/screens/auth/login_screen.dart';
 import 'package:offline_task/utils/theme/colors.dart';
 
 Future<void> main() async {
@@ -16,14 +16,18 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      darkTheme: GlobalTheme.themeData(GlobalTheme.darkColorScheme, GlobalTheme.darkFocusColor),
-      theme: GlobalTheme.themeData(GlobalTheme.lightColorScheme, GlobalTheme.lightFocusColor),
-      debugShowCheckedModeBanner: false,
-      onGenerateRoute:(settings) => AppRoute.customGenerateRoute(settings) ,
+    return MultiBlocProvider(
+      providers:GlobalApp.providers,
+      child: MaterialApp(
+        title: 'Flutter Demo',
+
+        darkTheme: GlobalTheme.themeData(GlobalTheme.darkColorScheme, GlobalTheme.darkFocusColor),
+        theme: GlobalTheme.themeData(GlobalTheme.lightColorScheme, GlobalTheme.lightFocusColor),
+        debugShowCheckedModeBanner: false,
+        onGenerateRoute:(settings) => AppRoute.customGenerateRoute(settings) ,
 
 
+      ),
     );
   }
 }

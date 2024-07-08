@@ -1,19 +1,35 @@
-import 'package:bloc/bloc.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'task_event.dart';
 import 'task_state.dart';
 
-class TaskBloc extends Bloc<TaskEvent, TaskState> {
-  TaskBloc() : super(TaskState().init());
+class TaskBloc extends Bloc<TaskEvent, TaskStates> {
+  TaskBloc() : super(  TaskStates()){
+    on<AddTaskEvent>((event, emit) {
+        var copyList  = state.tasks.toList();
+        copyList.add(event.taskname);
+        emit(
+          state.copyWith(
+            tasks: copyList
+          )
+        );
 
-  @override
-  Stream<TaskState> mapEventToState(TaskEvent event) async* {
-    if (event is InitEvent) {
-      yield await init();
-    }
+
+    });
+    on<GetListTasks>((event, emit) {
+
+        if(state.tasks.isEmpty) {
+          emit(
+          TaskEmpty(
+            isEmpty: true
+          )
+          );
+        }
+
+
+    });
   }
 
-  Future<TaskState> init() async {
-    return state.clone();
-  }
+
+
 }

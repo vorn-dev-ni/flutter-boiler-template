@@ -7,18 +7,7 @@ import 'package:offline_task/services/base_api_service.dart';
 
 
 class NetworkClient implements BaseApiService {
-  // Future<dynamic> fetchData (String baseUrl) async {
-  //   try {
-  //     Uri uri = Uri.parse(baseUrl);
-  //     var response = await  http.get(uri);
-  //     var jsonResponse =   CustomApiResponse.getApiResponse(response);
-  //     return jsonResponse;
-  //   }on Exception{
-  //     rethrow;
-  //   }
-  //
-  //
-  // }
+
   late final http.Client client;
   late final String token;
 
