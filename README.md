@@ -1,4 +1,4 @@
-# Flutter Boilertemplate + Bloc
+# Flutter Boiler template 
 
 A new Flutter project.
 
