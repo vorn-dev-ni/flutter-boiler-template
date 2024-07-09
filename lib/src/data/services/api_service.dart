@@ -1,6 +1,6 @@
 
-import 'package:offline_task/services/network/error_response.dart';
-import 'package:offline_task/services/network_client.dart';
+import 'package:offline_task/src/data/services/network/error_response.dart';
+import 'package:offline_task/src/data/services/network_client.dart';
 
 class ApiService {
 

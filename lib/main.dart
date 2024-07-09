@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:offline_task/global.dart';
-import 'package:offline_task/routes/app-routes.dart';
-import 'package:offline_task/utils/theme/colors.dart';
+import 'package:offline_task/src/presentation/routes/app-routes.dart';
+import 'package:offline_task/src/utils/theme/colors.dart';
 
 Future<void> main() async {
   await GlobalApp.init();

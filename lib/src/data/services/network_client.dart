@@ -3,7 +3,7 @@
 import 'dart:convert';
 import 'dart:io';
 import 'package:http/http.dart' as http;
-import 'package:offline_task/services/base_api_service.dart';
+import 'package:offline_task/src/data/services/base_api_service.dart';
 
 
 class NetworkClient implements BaseApiService {

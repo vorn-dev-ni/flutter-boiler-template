@@ -1,8 +1,9 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:offline_task/screens/tab/account_screen.dart';
-import 'package:offline_task/screens/tab/home_screen.dart';
-import 'package:offline_task/screens/tab/navigation_bottom.dart';
+import 'package:offline_task/src/presentation/screens/tab/account_screen.dart';
+import 'package:offline_task/src/presentation/screens/tab/home_screen.dart';
+import 'package:offline_task/src/presentation/screens/tab/navigation_bottom.dart';
+
 
 class AppRoute {
 

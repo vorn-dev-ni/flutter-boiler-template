@@ -1,10 +1,11 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:offline_task/blocs/task/task_bloc.dart';
-import 'package:offline_task/blocs/task/task_event.dart';
-import 'package:offline_task/blocs/task/task_state.dart';
-import 'package:offline_task/widgets/global/my_text_input.dart';
+import 'package:offline_task/global.dart';
+import 'package:offline_task/src/blocs/task/task_bloc.dart';
+import 'package:offline_task/src/blocs/task/task_event.dart';
+import 'package:offline_task/src/blocs/task/task_state.dart';
+import 'package:offline_task/src/presentation/widgets/global/my_text_input.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -52,12 +53,16 @@ class _HomeState extends State<Home> {
   }
   @override
 
+
+
   void initState() {
     // TODO: implement initState
     txtinputTaskController = TextEditingController();
     context.read<TaskBloc>().add(GetListTasks());
     super.initState();
   }
+
+
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar: AppBar(

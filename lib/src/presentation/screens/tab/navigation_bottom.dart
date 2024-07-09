@@ -1,8 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:offline_task/routes/app-routes.dart';
-import 'package:offline_task/screens/tab/account_screen.dart';
-import 'package:offline_task/screens/tab/home_screen.dart';
+import 'package:offline_task/src/presentation/routes/app-routes.dart';
 
 class TabNavigation extends StatefulWidget {
   TabNavigation({super.key});
