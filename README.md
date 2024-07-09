@@ -1,4 +1,4 @@
-# offline_task
+# Flutter Boiler template 
 
 A new Flutter project.
 
