@@ -1,4 +1,4 @@
-# Flutter Boiler template 
+# Flutter Boiler template with Bloc / Cubit Pattern 2024 
 
 A new Flutter project.
 
