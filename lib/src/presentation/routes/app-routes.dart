@@ -13,14 +13,14 @@ class AppRoute {
 
   ];
   static final List<BottomNavigationBarItem> listNavigations = [
-    BottomNavigationBarItem(
+  const    BottomNavigationBarItem(
 
         icon: Icon(Icons.home),
         label: 'Home'
 
 
     ),
-    BottomNavigationBarItem(
+    const  BottomNavigationBarItem(
 
         icon: Icon(Icons.accessibility),
         label: 'Account'

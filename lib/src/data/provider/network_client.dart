@@ -3,7 +3,8 @@
 import 'dart:convert';
 import 'dart:io';
 import 'package:http/http.dart' as http;
-import 'package:offline_task/src/data/services/base_api_service.dart';
+import 'package:offline_task/src/data/provider/base_api_service.dart';
+
 
 
 class NetworkClient implements BaseApiService {
@@ -12,6 +13,7 @@ class NetworkClient implements BaseApiService {
   late final String token;
 
   NetworkClient(this.client, this.token);
+
   Map<String, String> _createHeaders() {
     final headers = <String, String>{
       'Content-Type': 'application/json',

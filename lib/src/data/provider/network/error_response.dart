@@ -1,5 +1,5 @@
 import 'package:http/http.dart';
-import 'package:offline_task/src/data/services/network/api_exception.dart';
+import 'package:offline_task/src/data/provider/network/api_exception.dart';
 
 class CustomApiResponse {
     static getApiResponse (Response response) async {

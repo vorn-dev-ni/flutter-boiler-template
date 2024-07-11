@@ -13,7 +13,7 @@ class RouteApp {
   static final listscreens = [
       PageRoutes(login, LoginScreen()),
       PageRoutes(home,Home()),
-    PageRoutes(home,AccountScreen()),
+      PageRoutes(home,AccountScreen()),
 
   ];
 }

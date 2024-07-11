@@ -1,7 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:offline_task/global.dart';
 import 'package:offline_task/src/blocs/task/task_bloc.dart';
 import 'package:offline_task/src/blocs/task/task_event.dart';
 import 'package:offline_task/src/blocs/task/task_state.dart';
@@ -72,9 +71,7 @@ class _HomeState extends State<Home> {
         child:  BlocConsumer<TaskBloc, TaskStates>(
          listener: (context, state) {
            txtinputTaskController.clear();
-        if(kDebugMode) {
-          print(state);
-        }
+
        },
        builder: (context, state) {
 

@@ -1,16 +1,16 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:offline_task/src/presentation/routes/app-routes.dart';
 
 class TabNavigation extends StatefulWidget {
-  TabNavigation({super.key});
+  const TabNavigation({super.key});
 
   @override
   State<TabNavigation> createState() => _TabNavigationState();
 }
 
 class _TabNavigationState extends State<TabNavigation> {
-  int index = 0;
+  int index = 1;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,14 +18,13 @@ class _TabNavigationState extends State<TabNavigation> {
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Theme.of(context).primaryColor,
         onTap: (value) {
-            setState(() {
-              index = value;
-            });
+          setState(() {
+            index = value;
+          });
         },
         items: AppRoute.listNavigations,
         currentIndex: index,
         elevation: 0,
-
       ),
     );
   }
